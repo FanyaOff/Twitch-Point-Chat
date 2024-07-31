@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "twitch_point_chat",
+  "version": "1.0",
+  "name": "Twitch Point Chat",
+  "description": "A simple mod that allows you to send messages from twitch rewards to the game",
+  "authors": ["Fanya"],
+  "contact": {
+    "repo": "https://github.com/FanyaOff/Twitch-Point-Chat"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/twitch_point_chat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.fanya.twitch_point_chat.TwitchPointsChat"
+    ],
+    "modmenu": [
+      "com.fanya.twitch_point_chat.TpcModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}

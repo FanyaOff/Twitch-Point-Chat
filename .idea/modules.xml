@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Twitch-Point-Chat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Twitch-Point-Chat.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Twitch-Point-Chat.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Twitch-Point-Chat.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Twitch_Point_Chat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Twitch_Point_Chat.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Twitch_Point_Chat.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Twitch_Point_Chat.test.iml" />
+    </modules>
+  </component>
+</project>

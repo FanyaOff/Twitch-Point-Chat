@@ -46,7 +46,7 @@ public class TpcModMenuIntegration implements ModMenuApi {
                     .build()
             );
 
-            twitchapi.addEntry(entryBuilder.startBooleanToggle(Text.literal("Enable Sound Alert"), TwitchAPI.isAlertEnabled)
+            twitchapi.addEntry(entryBuilder.startBooleanToggle(Text.literal("Enable Sound Alert"), TwitchPointsChat.CONFIG.getIsAlertEnabled())
                     .setDefaultValue(TwitchPointsChat.CONFIG.getIsAlertEnabled())
                     .setSaveConsumer(newValue -> TwitchPointsChat.CONFIG.setIsAlertEnabled(newValue))
                     .build()

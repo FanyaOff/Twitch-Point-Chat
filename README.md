@@ -5,6 +5,7 @@
 Since 1.1 version mod has support for custom messages, which is displayed the reward has been activated
 - {username} - User username
 - {message} - User message
+  
 **Example:**
 `§5[TWITCH]§r §b{username}§r§f: {message}`
 

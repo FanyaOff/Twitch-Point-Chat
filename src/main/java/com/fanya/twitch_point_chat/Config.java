@@ -19,6 +19,7 @@ public class Config {
     private String rewardName = "Twitch Reward Name";
     private String username = "username";
     private boolean isAlertEnabled = true;
+    private String customMessage = "§5[TWITCH]§r §b{username}§r§f: {message}";
 
     private Config() {}
 
@@ -83,6 +84,15 @@ public class Config {
 
     public void setIsAlertEnabled(Boolean isAlertEnabled) {
         this.isAlertEnabled = isAlertEnabled;
+        saveConfig();
+    }
+
+    public String getCustomMessage() {
+        return customMessage;
+    }
+
+    public void setCustomMessage(String customMessage) {
+        this.customMessage = customMessage;
         saveConfig();
     }
 }

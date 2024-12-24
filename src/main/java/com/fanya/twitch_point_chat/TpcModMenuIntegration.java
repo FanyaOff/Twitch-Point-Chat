@@ -52,6 +52,12 @@ public class TpcModMenuIntegration implements ModMenuApi {
                     .build()
             );
 
+            twitchapi.addEntry(entryBuilder.startStrField(Text.literal("Custom Message"), TwitchPointsChat.CONFIG.getCustomMessage())
+                    .setDefaultValue(TwitchPointsChat.CONFIG.getCustomMessage())
+                    .setSaveConsumer(newValue -> TwitchPointsChat.CONFIG.setCustomMessage(newValue))
+                    .build()
+            );
+
             twitchapi.addEntry(twitchApiSubCategory.build());
 
             builder.setSavingRunnable(() -> {

@@ -17,12 +17,17 @@ public class TwitchAPI {
             TwitchPointsChat.LOGGER.info(rewardRedeemedEvent.getRedemption().getReward().getTitle() + " | " + rewardName);
             if (Objects.equals(rewardRedeemedEvent.getRedemption().getReward().getTitle(), rewardName)){
                 TwitchPointsChat.LOGGER.info("true");
-                if (mc.player != null){
+                if (mc.player != null) {
                     String text = rewardRedeemedEvent.getRedemption().getUserInput();
-                    if (TwitchPointsChat.CONFIG.getIsAlertEnabled()){
+                    String username = rewardRedeemedEvent.getRedemption().getUser().getDisplayName();
+                    String customMessage = TwitchPointsChat.CONFIG.getCustomMessage()
+                            .replace("{username}", username)
+                            .replace("{message}", text);
+
+                    if (TwitchPointsChat.CONFIG.getIsAlertEnabled()) {
                         mc.player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 10F, 0F);
                     }
-                    mc.player.sendMessage(Text.literal("§5[TWITCH]§r §b" + rewardRedeemedEvent.getRedemption().getUser().getDisplayName() + "§r§f: " + text));
+                    mc.player.sendMessage(Text.literal(customMessage), false);
                 }
             }
         });

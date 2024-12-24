@@ -1,6 +1,13 @@
 # Twitch Point Chat
  A simple mod that allows you to send messages from twitch rewards to the game
 
+# Custom messages
+Since 1.1 version mod has support for custom messages, which is displayed the reward has been activated
+- {username} - User username
+- {message} - User message
+**Example:**
+`§5[TWITCH]§r §b{username}§r§f: {message}`
+
 # How to setup mod
 To install the mod, you will need:
 - [Cloth Config](https://modrinth.com/mod/cloth-config)
@@ -18,7 +25,8 @@ How to do it? It's simple!
 
 **2) Paste it into mod config**
 
-![image](https://github.com/user-attachments/assets/1df06936-fa47-451e-81d4-9b38ce6f9c88)
+![idea64_sgoDfMGDSR](https://github.com/user-attachments/assets/fa546a8b-7862-4140-bc83-39e3aea0e2e0)
+
 
 **3) Fill another fields**
 - Reward name:
